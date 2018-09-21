@@ -6,9 +6,9 @@ function setup() {
 }
 
 function draw() {
-  let x = random(width);
-  let y = random(height);
-  fill(x, y, 450);
+  let x = random(width + height);
+  let y = random(height + width);
+  fill(x, y, 740);
   noStroke()
   triangle(x ,y , 400, 400, 200, 200, 50, 50);
 	
