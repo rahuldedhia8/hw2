@@ -1,0 +1,40 @@
+function setup() {
+  createCanvas(400, 400);
+}
+
+var x = 10;
+var changeInX = 10;
+
+var y=10
+var changeInY= 10;
+
+function draw() {
+  background(1);
+  
+  ellipse(x, 190, 40);
+	triangle(x, 200, 70, 140, 20, 86, 75)
+	rect(x, 200, 70, 100, 100, 70, 70, 70, 42)
+	rect(y, 200, 130, 100, 100, 70, 70, 70, 42)
+
+
+	 
+  
+  x = x + changeInX;
+	y = y + changeInY;
+  
+  if (x > width) {
+    changeInX = -30;
+  }
+  
+  if (x < 0) {
+    changeInX = 10;
+  }
+	
+	if (y < height) {
+		changeInY = -230;
+	}
+	 
+	if (y < 0) {
+		changeInY = 100;
+	}
+}
