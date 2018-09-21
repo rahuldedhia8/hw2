@@ -1,0 +1,15 @@
+function setup() {
+  createCanvas(400, 400);
+  background(220);
+  // RGB with R range 0-400, S range 0-700, B range 0-20:
+  colorMode(RGB, 380, 700, 20);
+}
+
+function draw() {
+  let x = random(width);
+  let y = random(height);
+  fill(x, y, 450);
+  noStroke()
+  triangle(x ,y , 400, 400, 200, 200, 50, 50);
+	
+}
